@@ -1,0 +1,19 @@
+site_name: AWS Boto3 to Terraform CLI Tool
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: false
+            show_root_heading: true
+            separate_signature: true
+
+nav:
+  - Home: index.md
+  - API Reference:
+      - AWS Fetch: api/aws_fetch.md
+      - Terraform Generator: api/tf_generator.md
