@@ -22,49 +22,59 @@ A simple Python CLI tool that uses **Boto3** to fetch AWS VPC and EC2 instance d
 
 ```bash
 pip install boto3 mkdocs mkdocs-material mkdocstrings[python]
-
+```
 ##  How to use?
 
 1. Run this tool
 
 ```bash
 python main.py
-
+```
 2. Enter your desired AWS region ```(e.g. us-east-1)``` 
 
 3. This tool will:
-     .   List your VPCs and EC2s
-     .   Generate ``` .tf ``` file under ``` terraform_output/
+      - List your VPCs and EC2s
+      - Generate ``` .tf ``` file under ``` terraform_output/```
 
 
-Example Output:
+## Example Output:
+
+![image](https://github.com/user-attachments/assets/3664f067-b961-4f60-9092-43db93aa424c)
 
 
 
 ## Project Structure:
-```bash
+```
 aws_boto3_to_terraform/
-├── main.py                      # CLI entry point
+├── main.py                     # CLI entry point
 ├── utils/
 │   ├── aws_fetch.py            # AWS Boto3 logic
 │   └── tf_generator.py         # Terraform file generation
-├── terraform_output/            # Generated .tf files
-├── docs/                        # MkDocs documentation
-├── mkdocs.yml                   # Docs site configuration
+├── vpcs/                       # Generated .tf files
+├── docs/                       # MkDocs documentation
+├── mkdocs.yml                  # Docs site configuration
 └── README.md
 
-
+```
 
 ## To view the full developer documenation:
 
-```bash 
+- Run
 
+```
 python mkdocs serve
+```
+then visit:
+```
+http://127.0.0.1:8000
+```
+It will appears like this:
+![image](https://github.com/user-attachments/assets/510d4412-fe89-4bdf-a7f7-5be6b0dfc0ff)
 
 
-then visit: http://127.0.0.1:8000
+## Example Output  Terraform:
+![image](https://github.com/user-attachments/assets/d5b1e21e-7d1a-4d46-a800-607005ad4301)
 
-Example Output  Terraform:
 
 
 
