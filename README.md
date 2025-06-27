@@ -23,6 +23,26 @@ A simple Python CLI tool that uses **Boto3** to fetch AWS VPC and EC2 instance d
 ```bash
 pip install boto3 mkdocs mkdocs-material mkdocstrings[python]
 ```
+- Clone the repository:
+  ```
+  git clone https://github.com/Youssefshawky969/python-terraform-2.git
+  cd python-terraform-2/
+  ```
+
+## Project Structure:
+```
+python-terraform-2/
+├── main.py                     # CLI entry point
+├── utils/
+│   ├── aws_fetch.py            # AWS Boto3 logic
+│   └── tf_generator.py         # Terraform file generation
+├── vpcs.tf                     # Generated .tf files
+├── docs/                       # MkDocs documentation
+├── mkdocs.yml                  # Docs site configuration
+└── README.md
+
+```
+
 ##  How to use?
 
 1. Run this tool
@@ -43,19 +63,6 @@ python main.py
 
 
 
-## Project Structure:
-```
-aws_boto3_to_terraform/
-├── main.py                     # CLI entry point
-├── utils/
-│   ├── aws_fetch.py            # AWS Boto3 logic
-│   └── tf_generator.py         # Terraform file generation
-├── vpcs/                       # Generated .tf files
-├── docs/                       # MkDocs documentation
-├── mkdocs.yml                  # Docs site configuration
-└── README.md
-
-```
 
 ## To view the full developer documenation:
 
@@ -69,6 +76,7 @@ then visit:
 http://127.0.0.1:8000
 ```
 It will appears like this:
+
 ![image](https://github.com/user-attachments/assets/510d4412-fe89-4bdf-a7f7-5be6b0dfc0ff)
 
 
