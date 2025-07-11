@@ -1,3 +1,9 @@
+"""
+This module provides functions to fetch AWS resources such as VPCs and EC2 instances
+using the Boto3 SDK. It is used in the AWS-to-Terraform CLI tool to gather data
+for Terraform config generation.
+"""
+
 from utils.aws_fetch import list_vpcs, list_ec2_instances
 from utils.tf_generator import generate_vpc_tf
 
