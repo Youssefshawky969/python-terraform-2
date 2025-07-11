@@ -81,14 +81,14 @@ It will appears like this:
 
 
 ## Example Output  Terraform:
-`
+```
 resource "aws_vpc" "vpc_1" {
   cidr_block = "10.0.0.0/16"
   tags = {
     Name = "MyVPC"
   }
 }
-`
+```
 
 ## For Full Documentation:
 [Click here to view](https://youssefshawky969.github.io/python-terraform-2/)
