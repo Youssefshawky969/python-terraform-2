@@ -1,3 +1,10 @@
+"""
+aws_fetch.py
+
+Contains utility functions that use Boto3 to list AWS VPCs and EC2 instances.
+Used by the CLI tool to generate Terraform configs.
+"""
+
 from typing import List, Dict
 import boto3
 
