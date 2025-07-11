@@ -15,7 +15,7 @@ Welcome to the documentation site for the AWS Boto3 to Terraform CLI.
 - Modular Python structure
 - Auto-generated documentation using MkDocs
 
- ## Quick Link
+ ### Quick Link
 
 - [Getting Started](getting-started.md)
 - [Usage Guide](usage.md)
