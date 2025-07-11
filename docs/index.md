@@ -2,7 +2,7 @@
 
 Welcome to the documentation site for the AWS Boto3 to Terraform CLI.
 
-This tool lets you:
+#### This tool lets you:
   -  Discover AWS VPCs and EC2 instances
   -  Generate Terraform `.tf` files from live AWS environments
   -  Easily reverse-engineer infrastructure into code
