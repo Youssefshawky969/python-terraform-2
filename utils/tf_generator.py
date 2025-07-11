@@ -1,3 +1,9 @@
+"""
+tf_generator.py
+
+Generates Terraform configuration (.tf) files based on AWS resource data.
+"""
+
 import os
 from typing import List, Dict, Any
 
